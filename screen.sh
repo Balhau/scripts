@@ -22,4 +22,8 @@ elif [ $MODE -eq 4 ]
 then
 	echo "Set home desktop: $MODE"
 	xrandr --auto --output DP-2 --mode 1680x1050 --right-of eDP-1
+elif [ $MODE -eq 5 ]
+then
+	echo "Set adamastor: $MODE"
+	xrandr --auto --output HDMI-1 --mode 3440x1440 --right-of eDP-1
 fi
